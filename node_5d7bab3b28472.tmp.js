@@ -44,7 +44,7 @@ section>h2{
     font-size: 120px;
     top: 20px;
     
-    animation: rgb 2s infinite linear;
+    animation: rgb_img 2s infinite linear;
   
 }
 .p_sessao>h2{
@@ -54,7 +54,7 @@ section>h2{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: rgb 2s infinite linear;
+    animation: rgb_img 2s infinite linear;
 }
 .p_sessao>img{
     position: absolute;
@@ -64,74 +64,44 @@ section>h2{
    filter: drop-shadow(0px 0px 1px purple);
    
 }
-.s_sessao{
-    min-width: 1000px;
-}
+
 .s_sessao>img{
     height: 250px;
     border: 5px solid ;
     border-radius: 50%;
-    background: black;
     animation: rgb_img 2s infinite linear;
 }
 
-
+.s_sessao>img:nth-child(4){
+   top: 10%;
+}
 .div1{
-    position: absolute;
-    border-bottom: 15px solid purple;
-    margin-left: 200px;
-    width: 700px;
+    position: relative;
+    border-bottom: 5px solid purple;
+    width: 500px;
     height: 100px;
-    
-    top:40%;
-    left: 800px;
-    transform: translate(-50%, -50%);
-    border-left: 15px solid purple;
+    bottom: 150px;
+    left: 15;
+    border-left: 5px solid purple;
     border-radius: 5px 5px 0 0;
-    z-index: 1;
 }
 .div2{
-    position: absolute;
-    top:54%;
-    left: 800px;
-    transform: translate(-50%, -50%);
-    margin-left: 200px;
-    width: 700px;
-    height: 100px;
-    border-bottom: 15px solid purple;
-    border-right: 15px solid purple;
-    z-index: 1;
-}
-.div3{
-    position: absolute;
-    border-bottom: 15px solid purple;
-    margin-left: 200px;
-    width: 700px;
-    height: 100px;
+    position: relative;
     
-    top:80%;
-    left: 800px;
-    transform: translate(-50%, -50%);
-    border-left: 15px solid purple;
-    border-radius: 5px 5px 0 0;
-    z-index: 1;
+    width: 500px;
+    height: 100px;
+    border-bottom: 5px solid purple;
+    border-right: 5px solid purple;
+
 }
-.s_sessao>img:nth-child(4){
-    top: 10%;
-    z-index: 2;
- }
 .s_sessao>img:nth-child(5){
     top: 25%;
-    z-index: 2;
 }
 .s_sessao>img:nth-child(6){
     top: 55%;
-    z-index: 2;
 }
 .s_sessao>img:nth-child(7){
-    background: black;
    top: 65%;
-   z-index: 2;
 }
 .l_esquerdo{
     position: absolute;
@@ -139,9 +109,7 @@ section>h2{
 }
 .l_direito{
     position: absolute;
-    background: black;
     right: 500px;
-    
 }
 @media screen and  (min-width: 1800px) {
     body{
@@ -149,23 +117,18 @@ section>h2{
         color: white;
         overflow-x: hidden;
     }
-    
 }
-
-    
-
-
 @keyframes rgb{
  0%{
-    filter: drop-shadow(0px 0px 5px green);
+    filter: drop-shadow(10px -4px 5px green);
     
  }
  50%{
-    filter: drop-shadow(0px 0px 5px blue);
+    filter: drop-shadow(10px -4px 5px blue);
    
  }
  100%{
-    filter: drop-shadow(0px 0px 5px red);
+    filter: drop-shadow(10px -4px 5px red);
     
  }
 }
