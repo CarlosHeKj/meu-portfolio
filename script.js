@@ -2,6 +2,7 @@ const mensagem = document.getElementById("Escrever");
 const botao_cima = document.getElementById("seta_cima");
 const botao_baixo = document.getElementById("link_seta_baixo");
 const div_seta_baixo = document.getElementById("div_seta_baixo");
+const link_seta_cima = document.getElementById("link_seta_cima");
 let count = 1;
 window.addEventListener("scroll", function(event)  {
   if(this.window.scrollY == 0){
@@ -9,9 +10,11 @@ window.addEventListener("scroll", function(event)  {
     div_seta_baixo.classList.remove("hidden");
     botao_cima.classList.remove("visible");
     botao_baixo.style.cssText = 'cursor:pointer;';
+    link_seta_cima.style.cssText = 'cursor:default;';
   }
   else{
     botao_cima.classList.add("visible");
+    link_seta_cima.style.cssText = 'cursor:pointer;';
   }
 })
 

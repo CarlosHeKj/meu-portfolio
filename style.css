@@ -52,8 +52,12 @@ a{
     
     bottom: 3px;
     z-index: 5;
+    
     opacity: 0;
     transition:  all 300ms ease-in-out;
+}
+#link_seta_cima{
+    cursor:default;
 }
 #seta_cima.visible{
     bottom: 0px;
@@ -84,6 +88,7 @@ footer{
 section{
     display: flex;
     position: relative;
+    min-height: 1000px;
 }
 
 .p_sessao>h1{
