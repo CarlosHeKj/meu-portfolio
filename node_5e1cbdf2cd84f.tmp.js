@@ -4,11 +4,9 @@
     box-sizing: border-box;
     
     color: white;
-    scroll-behavior: smooth;
 
 }
 body{
-    
     background-color: black;
     color: white;
     
@@ -18,7 +16,6 @@ body{
     border: 4px solid purple;
     width: 100px;
     height: 100px;
-   
     left: 50%;
     font-size: 100px;
      display: flex;
@@ -29,35 +26,20 @@ body{
      justify-content: center;
     text-align: center;
     border-radius: 100px;
-    flex-direction: column;
     animation: cb 500ms infinite linear;
     cursor: pointer;
-    background: black;
-    opacity: 1;
-    transition:  all 300ms ease-in-out;
-}
-#div_seta_baixo.hidden{
-    opacity: 0;
 }
 
-a{
-    text-decoration: none;
-   
-}
+
 #seta_cima{
     right: 0;
    
     display: flex;
     position: fixed;
     
-    bottom: 3px;
-    z-index: 5;
-    opacity: 0;
-    transition:  all 300ms ease-in-out;
-}
-#seta_cima.visible{
     bottom: 0px;
-    opacity: 1;
+    z-index: 5;
+    
 }
 section{
     position: relative;
@@ -81,11 +63,12 @@ footer{
     flex-wrap: wrap;
     height: 100px;
 }
-section{
-    display: flex;
-    position: relative;
+section>h2{
+    position: absolute;
+    top: 20px;
+    font-size: 50px;
+    left: 20px;
 }
-
 .p_sessao>h1{
     position: absolute;
     font-size: 120px;
@@ -103,12 +86,6 @@ section{
     transform: translate(-50%, -50%);
     animation: rgb 2s infinite linear;
 }
-#Escrever:after{
-    content: '|';
-    margin-left: 5px;
-    opacity: 1;
-    animation: pisca .7s infinite;
-   }
 .p_sessao>img{
     position: absolute;
     bottom: 0;
@@ -118,110 +95,113 @@ section{
    
 }
 .s_sessao{
-    
-    position: relative;
-    
-    flex-wrap: wrap;
+    min-width: 1000px;
 }
-h2{
-    font-size: 50px;
-    position: absolute;
-    top: 1px;
-    left: 5px;
-    animation: rgb 2s infinite linear; 
-}
-.centralizar{
-    display: flex;
-    position: relative;
-    width: 1000px;
-    height: 800px;
-    
-    justify-content: center;
-    align-items: center;
-    margin: 75px auto;
-}
-.imagens{
-    display: flex;
-    width: auto;
-    height: auto;
-    justify-content: space-around;
-    
-}
-.imagens>img{
+.s_sessao>img{
     height: 250px;
     border: 5px solid ;
     border-radius: 50%;
     background: black;
     animation: rgb_img 2s infinite linear;
-    z-index: 2;
-    transition: 300ms ease-in-out;
-    
-}
-.img:hover{
-    transform: scale(1.05);
-
-}
-.imagens>img:nth-child(1){
-    
-    position: absolute;
-    top: 1%;
-}
-.imagens>img:nth-child(2){
-    
-    position: absolute;
-    top: 25%;
-}
-.imagens>img:nth-child(3){
-    
-    position: absolute;
-    bottom: 25%;
-}
-.imagens>img:nth-child(4){
-    
-    position: absolute;
-    bottom: 05%;
 }
 
-.linhas{
-    position: relative;
+
+.div1{
+    position: absolute;
     border-bottom: 15px solid purple;
-    border-radius: 50%;
+    margin-left: 200px;
     width: 700px;
     height: 100px;
-    max-width: 70%;
-    left: 155px;
+    
+    top:40%;
+    left: 800px;
+    transform: translate(-50%, -50%);
+    border-left: 15px solid purple;
+    border-radius: 5px 5px 0 0;
     z-index: 1;
 }
-.linha1{
-    top: 25%;
-    border-left: 15px solid purple;
+.div2{
     position: absolute;
- 
-   
-}
-.linha2{
-    top: 50%;
+    top:54%;
+    left: 800px;
+    transform: translate(-50%, -50%);
+    margin-left: 200px;
+    width: 700px;
+    height: 100px;
+    border-bottom: 15px solid purple;
     border-right: 15px solid purple;
-    position: absolute;
-    
+    z-index: 1;
 }
-.linha3{
-    bottom: 20%;
+.div3{
+    position: absolute;
+    border-bottom: 15px solid purple;
+    margin-left: 200px;
+    width: 700px;
+    height: 100px;
+    
+    top:80%;
+    left: 800px;
+    transform: translate(-50%, -50%);
     border-left: 15px solid purple;
-    position: absolute;
-  
-    
+    border-radius: 5px 5px 0 0;
+    z-index: 1;
 }
+#h2:after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+   }
+.s_sessao>img:nth-child(4){
+    top: 10%;
+    z-index: 2;
+    transition: all 200ms ease-in-out;
+ }
 
-
+.s_sessao>img:nth-child(5){
+    top: 25%;
+    z-index: 2;
+    transition: all 200ms ease-in-out;
+}
+.s_sessao>img:nth-child(6){
+    top: 55%;
+    z-index: 2;
+    transition: all 200ms ease-in-out;
+}
+.s_sessao>img:nth-child(7){
+    background: black;
+   top: 65%;
+   z-index: 2;
+   transition: all 200ms ease-in-out;
+}
+.s_sessao>img:nth-child(4):hover{
+    transform: scale(1.1);
+     }
+     
+     .s_sessao>img:nth-child(5):hover{
+        transform: scale(1.1);
+         }
+         .s_sessao>img:nth-child(6):hover{
+            transform: scale(1.1);
+             }
+             .s_sessao>img:nth-child(7):hover{
+                transform: scale(1.1);
+                 }
+.div4{
+    visibility: visible;
+    opacity: 1;
+    width: 100px;
+    height: 100px;
+    border: 1px solid purple;
+}
 .l_esquerdo{
     position: absolute;
-    left: 20px;
+    left: 500px;
 }
 .l_direito{
     position: absolute;
     background: black;
-    right: 20px;
+    right: 500px;
     
 }
 @media screen and  (min-width: 1800px) {
