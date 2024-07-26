@@ -2,20 +2,24 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
-    color: white;
+     color: white;
+   
     scroll-behavior: smooth;
 
 }
 body{
-    
-    background-color: black;
-    color: white;
-    
+   
+    background-image: url("./arquivos/background.jpg");
+    background-position: center;
+    background-size: cover;
+ 
+   
+   
+   
 }
 
 #div_seta_baixo{
-    border: 4px solid purple;
+    
     width: 100px;
     height: 100px;
    
@@ -30,12 +34,13 @@ body{
     text-align: center;
     border-radius: 100px;
     flex-direction: column;
-    animation: cb 500ms infinite linear;
+    animation: cb 500ms infinite alternate;
     cursor: pointer;
     background: black;
     opacity: 1;
     transition:  all 300ms ease-in-out;
 }
+
 #div_seta_baixo.hidden{
     opacity: 0;
 }
@@ -62,21 +67,27 @@ a{
 #seta_cima.visible{
     bottom: 0px;
     opacity: 1;
+    animation: cb 2000ms infinite alternate;
 }
 section{
+    
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    border-bottom: 2px solid purple;
+    
     gap: 1px;
     align-items: center;
     justify-content: center;
-    min-height: 820px;
+    min-height: 1000px;
     min-width: 1100px;
     height: 100dvh;
     width: 100dvw;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.3);
     flex-wrap: wrap;
+ 
 }
+
+
 footer{
     position: relative;
     display: flex;
@@ -85,18 +96,15 @@ footer{
     flex-wrap: wrap;
     height: 100px;
 }
-section{
-    display: flex;
-    position: relative;
-    min-height: 1000px;
-}
+
 
 .p_sessao>h1{
     position: absolute;
     font-size: 120px;
     top: 20px;
     
-    animation: rgb 2s infinite linear;
+    animation: rgb 2s infinite alternate;
+    transition: all 300ms ease-out;
   
 }
 .p_sessao>h2{
@@ -106,21 +114,45 @@ section{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: rgb 2s infinite linear;
+    animation: rgb 2s infinite alternate;
+    z-index: 5;
+}
+.p_sessao>h1:hover{
+    transform: scale(1.1);
 }
 #Escrever:after{
     content: '|';
     margin-left: 5px;
     opacity: 1;
-    animation: pisca .7s infinite;
+    animation: pisca .7s infinite alternate;
    }
-.p_sessao>img{
-    position: absolute;
-    bottom: 0;
-    right: 20px; 
-    height: 600px;
-   filter: drop-shadow(0px 0px 1px purple);
    
+ #borda_da_foto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    position: absolute;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+   border-radius: 50%;
+    bottom: 5px;
+    right: 50px;
+    transition: all 300ms ease-in-out;
+    z-index: 2;
+ } 
+ #borda_da_foto:hover{
+    transform: translatex(10px);
+ }
+#borda_da_foto>img{
+    position: relative;
+    height: 500px;
+    border-radius: 50%;
+   filter: drop-shadow(0px 0px 1px purple);
+   transition: all 300ms ease-in-out;
+   
+}
+#borda_da_foto>img:hover{
+    transform:  translateY(-25px) rotate(-10deg) translateX(-20px) scale(1.1);
 }
 .s_sessao{
     
@@ -133,7 +165,7 @@ h2{
     position: absolute;
     top: 1px;
     left: 5px;
-    animation: rgb 2s infinite linear; 
+    animation: rgb 2s infinite alternate; 
 }
 .centralizar{
     display: flex;
@@ -153,11 +185,11 @@ h2{
     
 }
 .imagens>img{
-    height: 250px;
+    height: 150px;
     border: 5px solid ;
     border-radius: 50%;
     background: black;
-    animation: rgb_img 2s infinite linear;
+    animation: rgb_img 2s infinite alternate;
     z-index: 2;
     transition: 300ms ease-in-out;
     
@@ -169,7 +201,7 @@ h2{
 .imagens>img:nth-child(1){
     
     position: absolute;
-    top: 1%;
+    top: 10%;
 }
 .imagens>img:nth-child(2){
     
@@ -179,40 +211,53 @@ h2{
 .imagens>img:nth-child(3){
     
     position: absolute;
-    bottom: 25%;
+    bottom: 40%;
 }
 .imagens>img:nth-child(4){
     
     position: absolute;
-    bottom: 05%;
+    bottom: 25%;
+}
+.imagens>img:nth-child(5){
+    
+    position: absolute;
+    bottom: 12%;
 }
 
 .linhas{
     position: relative;
     border-bottom: 15px solid purple;
     border-radius: 50%;
-    width: 700px;
+    width: 900px;
     height: 100px;
     max-width: 70%;
     left: 155px;
     z-index: 1;
 }
 .linha1{
-    top: 25%;
-    border-left: 15px solid purple;
+    top: 20%;
+    
     position: absolute;
+    transform: rotate(10deg);
  
    
 }
 .linha2{
-    top: 50%;
-    border-right: 15px solid purple;
+    top: 40%;
+    transform: rotate(-10deg);
     position: absolute;
     
 }
 .linha3{
+    bottom: 35%;
+    transform: rotate(5deg);
+    position: absolute;
+  
+    
+}
+.linha4{
     bottom: 20%;
-    border-left: 15px solid purple;
+    transform: rotate(-7deg);
     position: absolute;
   
     
@@ -221,12 +266,12 @@ h2{
 
 .l_esquerdo{
     position: absolute;
-    left: 20px;
+    left: 30px;
 }
 .l_direito{
     position: absolute;
     background: black;
-    right: 20px;
+    right: 30px;
     
 }
 @media screen and  (min-width: 1800px) {
@@ -242,7 +287,7 @@ h2{
 
 @keyframes cb{
     0%{
-        transform: translateY(-2px);
+        transform: translateY(-5px);
     }
     100%{
         transform: translateY(2px);
