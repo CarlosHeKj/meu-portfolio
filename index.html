@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Portfólio</title>
+</head>
+
+<body>
+    <!-- particles.js container -->
+    <div id="particles-js"></div> <!-- stats - count particles -->
+    <div> <span></span> </div> <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+
+    <nav id="navbar" data-aos="fade-down" class="navbar">
+        <h1><a href="#" id="home">Home</a></h1>
+        <h1><a href="#about_section" id="about">About</a></h1>
+        <h1><a href="#skills_section">Skills</a></h1>
+        <h1><a href="#projects_section">Projects</a></h1>
+        <h1><a href="#contact_section">Contact</a></h1>
+    </nav>
+    <section class="home_section" id="home_section">
+        <h1 data-aos="zoom-in-down">Carlos Henrique</h1>
+        <h2 id="Escrever" style="display: none;">Seja bem vindo ao meu portfólio</h2>
+        <ul class="redes_sociais" data-aos="fade-up">
+            <li><a href="https://github.com/CarlosHeKj" target="_blank"><img src="./assets/logo github.png" alt=""></a>
+            </li>
+            <li><a href="https://www.linkedin.com/in/carlos-henrique-silva-dos-santos-360148320/" target="_blank"><img
+                        src="./assets/logo linkedin.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/pacocakj/" target="_blank"><img src="./assets/logo instagram.png"
+                        alt=""></a></li>
+        </ul>
+
+
+    </section>
+
+    <section class="about_section" id="about_section" data-aos="fade-right" data-aos-delay="200">
+        <h1 class="titulos_sections">About</h1>
+        <div>
+            <img src="./assets/Eu.png" id="eu" alt="">
+            <img src="" alt="">
+            <div>
+
+                <h2 id="nome_about">Olá me chamo Carlos Henrique</h2>
+                <hr>
+                <p id="texto_about">Sou desenvolver fullstack, possuo 18 anos, nascido e criado no Rio de Janeiro.
+                    Atualmente estou atuando como freelancer, construindo um histórico de aprendizado e me tornando cada
+                    dia um desenvolvedor melhor, sempre em busca de evolução, com minhas habilidades já sou capaz de
+                    criar e desenvolver o software que você precisa. </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills_section" id="skills_section" data-aos="fade-right" data-aos-delay="200">
+        <h1 class="titulos_sections">Skills</h1>
+        <div id="skills_container">
+            <div>
+                <h2 id="titulo_skills">Resumo de habilidades</h2>
+                <hr>
+                <p id="texto_skills">
+                    Tenho experiência teorica e prática com as principais tecnologias de desenvolvimento web, HTML, CSS,
+                    JavaScript, além de frameworks como React e Node e TailWind. Alem de conhecimentos em Java orientado
+                    a objetos. Sou muito flexível e gosto de aprender novas tecnologias, com isso estou sempre aberto
+                    para novas oportunidades.
+                </p>
+            </div>
+            <div class="skills_children">
+                <div class="logos" data-aos="fade-up-right">
+                    <img src="./assets/logo java.png" alt="" class="logo">
+                    <h1>Java</h1>
+                </div>
+                <div class="logos" data-aos="fade-up-right" data-aos-delay="100">
+                    <img src="./assets/logo html.png" alt="" class="logo">
+                    <h1>Html</h1>
+                </div>
+
+                <div class="logos" data-aos="fade-up-right" data-aos-delay="150">
+                    <img src="./assets/logo css.png" alt="" class="logo" >
+                    <h1>CSS</h1>
+                </div>
+                <div class="logos" data-aos="fade-up-right" data-aos-delay="200"> 
+                    <img src="./assets/logo js.png" alt="" class="logo">
+                    <h1>Javascript</h1>
+                </div>
+                <div class="logos" data-aos="fade-up-right" data-aos-delay="250">
+                    <img src="./assets/logo springboot.png" alt="" class="logo">
+                    <h1>SpringBoot</h1>
+                </div>
+                <div class="logos" data-aos="fade-up-right" data-aos-delay="300">
+                    <img src="./assets/logo react.png" alt="" class="logo">
+                    <h1>React</h1>
+                </div>
+                <div class="logos" data-aos="fade-up-right" data-aos-delay="350">
+                    <img src="./assets/logo nodejs.png" alt="" class="logo">
+                    <h1>Nodejs</h1>
+                </div>
+                <div class="logos" data-aos="fade-up-right" data-aos-delay="400">
+                    <img src="./assets/logo mysql.png" alt="" class="logo">
+                    <h1>Mysql</h1>
+                </div>
+                <div class="logos" data-aos="fade-up-right" data-aos-delay="450">
+                    <img src="./assets/logo tailwind.png" alt="" class="logo">
+                    <h1>Tailwind</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects_section" class="projects_section" data-aos-delay="200">
+        <h1 class="titulos_sections">Project</h1>
+        <div class="projetos">
+            <div class="projeto" data-aos="fade-up-right" data-aos-delay="0"><img src="./assets/fundo_barbearia.png" alt="">
+                <h1>Barbearia ficticia</h1><a href="https://barbearia-ten-peach.vercel.app/" target="_blank">Ir para a
+                    página</a>
+            </div>
+            <div class="projeto" data-aos="fade-up-right" data-aos-delay="100"><img src="./assets/fundo_gerador.png" alt="">
+                <h1>Gerador de senha</h1><a href="https://carloshekj.github.io/Genador-de-senha/" target="_blank">Ir
+                    para o codigo</a>
+            </div>
+            <div class="projeto" data-aos="fade-up-right" data-aos-delay="150"><img src="./assets/fundo_h2.png" alt="">
+                <h1>DataBase H2</h1><a href="https://github.com/CarlosHeKj/workshop-springboot3-jpa" target="_blank">Ir
+                    para o codigo</a>
+            </div>
+            <div class="projeto" data-aos="fade-up-right" data-aos-delay="200"><img src="./assets/fundo_hamburgueria.png" alt="">
+                <h1>Hamburgeria ficticia</h1><a href="https://hamburgueria-gold-five.vercel.app/" target="_blank">Ir
+                    para a página</a>
+            </div>
+            <div class="projeto" data-aos="fade-up-right" data-aos-delay="250"><img src="./assets/fundo_mongodb.png" alt="">
+                <h1>DataBase MongoDB</h1><a href="https://github.com/CarlosHeKj/workshop-springboot-mongodb"
+                    target="_blank">Ir para o codigo</a>
+            </div>
+            <div class="projeto" data-aos="fade-up-right" data-aos-delay="300"><img src="./assets/fundo_systembank.png" alt="">
+                <h1>Sistema bancario</h1><a href="https://github.com/CarlosHeKj/Banking-system" target="_blank">Ir para
+                    o codigo</a>
+            </div>
+            <div class="projeto" data-aos="fade-up-right" data-aos-delay="350"><img src="./assets/fundo_temporizador.png" alt="">
+                <h1>Temporizador</h1><a href="https://carloshekj.github.io/Cronometro-Temporizador/" target="_blank">Ir
+                    para a página</a>
+            </div>
+            <div class="projeto" data-aos="fade-up-right" data-aos-delay="400"><img src="./assets/fundo_xadrex.png" alt="">
+                <h1>Sistema de xadrex</h1><a href="https://github.com/CarlosHeKj/chess-system-java" target="_blank">Ir
+                    para o codigo</a>
+            </div>
+        </div>
+
+    </section>
+    <section id="contact_section" class="contact_section" data-aos="fade-up-right">
+        <h1 class="titulos_sections">Me Contate</h1>
+        <div class="contact_div">
+            <div>
+            
+            <table>  
+                <h1>Redes sociais</h1>
+                <th><a href="https://www.instagram.com/pacocakj/" target="_blank">Instagram</a></th>
+                <th><a href="https://www.linkedin.com/in/carlos-henrique-silva-dos-santos-360148320/" target="_blank">Linkedin</a></th>
+                <th><a href="https://github.com/CarlosHeKj" target="_blank">GitHub</a></th>
+            </table>
+        </div>
+            <form id="formContato" method="POST" action="https://api.staticforms.xyz/submit">
+                <label for="nome">Nome:</label>
+                <input type="text" name="name" placeholder="Digite seu nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                <label for="phone">Telefone:</label>
+                <input type="text" name="phone" placeholder="Digite seu telefone">
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea autocomplete="off" id="mensagem" name="message" placeholder="Escreva sua mensagem aqui"
+                    rows="6" required></textarea>
+                <input type="hidden" name="accessKey" value="4b46a115-a773-4e9f-8ee9-d6d5e15c4433">
+                <input type="hidden" name="subject" value="Enviado pelo portfólio" />
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/#">
+
+                <input type="text" name="honeypot" style="display:none">
+
+
+                <input type="hidden" name="replyTo" value="@">
+                <input class="btn_enviar" type="submit" value="Enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- ajeitar os icones pra dar wrap, de projetos e area de contato-->
+
+
+
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
